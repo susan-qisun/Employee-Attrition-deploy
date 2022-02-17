@@ -58,22 +58,20 @@
     
 
 
-    <h1 style="text-align:center;color: rgb(156, 11, 6);font-family: inherit;">Machine
-        Learning model of Cardiac Arrest Prediction</h1>
+    <h1 style="text-align:center;color: rgb(156, 11, 6);font-family: inherit;">Predicting Employee Attrition</h1>
     <hr style="color: rgb(0, 0, 0);">
 
 
 
-    <h2 style="color: rgb(0, 0, 0);">About Cardiac arrest</h2>
+    <h2 style="color: rgb(0, 0, 0);">About Attrition</h2>
 
     <div class="a">
-        <p style="color: rgb(0, 0, 0);font-size:20px"> Sudden, unexpected loss of heart function, breathing and
-            consciousness.
-            In cardiac arrest, the heart abruptly stops beating. Without prompt intervention, it can result in the
-            person's death.
-            The main symptom is loss of consciousness and unresponsiveness.
-            This medical emergency needs immediate CPR or use of a defibrillator. Hospital care includes drugs, an
-            implantable device or other procedures.
+        <p style="color: rgb(0, 0, 0);font-size:20px"> Attrition is one of the important issues in an organization. 
+           The value of employees to an organization is a very crucial element in the success of the organization. 
+            When employees leave an organization, they carry with them invaluable knowledge which is often the source of competitive 
+            advantage for the business. Attrition is defined as the normal and uncontrollable reduction of a work force because of retirement, 
+            death, sickness, and relocation. The employee attrition is often unpredictable and can leave gaps in an organization. 
+            If organizations know why their employees leave, they can develop effective strategies for employee retention.
 
         </p>
     </div>
@@ -86,51 +84,85 @@
 
 
         <input type="text" placeholder="Person's Age" aria-label="default input example" required='required' name="a">
+        
+        <input type="text" placeholder="Daily Rate" aria-label="default input example" required='required' name="B">
+        
 
-        <select aria-label="Default select example" type="text" required='required' name="b">
+        <input type="text" placeholder="Education" aria-label="default input example" required='required' name="c">
+        
+         <select aria-label="Default select example" type="text" required='required' name="d">
 
-            <option value="1"> Female </option>
-            <option value="2"> Male</option>
-
+            <option value="1"> Education: Below College </option>
+            <option value="2"> College</option>
+            <option value="3"> Bachelor </option>
+            <option value="4"> Master</option>
+            <option value="5"> Doctor</option>
+             
         </select>
 
-        <input type="text" placeholder="Height in cm" aria-label="default input example" required='required' name="c">
+         <select aria-label="Default select example" type="text" required='required' name="e"><br> <br>
 
-        <input type="text" placeholder="Weight in kg" aria-label="default input example" required='required' name="d">
+            <option value="1"> Environment Satisfaction: Low </option>
+            <option value="2"> Medium</option>
+            <option value="3"> High </option>
+            <option value="4"> Very High</option>
+             
+        </select>        
+        
+         <select aria-label="Default select example" type="text" required='required' name="f">
 
-        <input type="text" placeholder="Systolic blood pressure" aria-label="default input example" required='required'
-            name="e"><br> <br>
+            <option value="1"> Job Involvement: Low </option>
+            <option value="2"> Medium</option>
+            <option value="3"> High </option>
+            <option value="4"> Very High</option>
+             
+        </select>               
+      
+        <input type="text" placeholder="Job Level (positive integer)" aria-label="default input example" required='required' name="g">
 
-        <input type="text" placeholder="Diastolic blood pressure" aria-label="default input example" required='required'
-            name="f">
+         <select aria-label="Default select example" type="text" required='required' name="h">
 
-        <select aria-label="Default select example" type="text" required='required' name="g">
+            <option value="1"> Job Satisfaction: Low </option>
+            <option value="2"> Medium</option>
+            <option value="3"> High </option>
+            <option value="4"> Very High</option>
+             
+        </select>   
+        
 
-            <option value="1">Cholestrol is normal </option>
-            <option value="2">Cholestrol is above normal </option>
-            <option value="3">Cholestrol is well above normal</option>
+         <select aria-label="Default select example" type="text" required='required' name="i">
+
+            <option value="1"> Working Relationship Satisfaction: Low </option>
+            <option value="2"> Medium </option>
+            <option value="3"> High </option>
+            <option value="4"> Very High </option>
+             
+        </select>   
+        
+        <input type="text" placeholder="Total Working Years" aria-label="default input example" required='required'
+            name="j"><br> <br>
+
+        <input type="text" placeholder="Training Times Last Year" aria-label="default input example" required='required'
+            name="k">
+
+        <select aria-label="Default select example" type="text" required='required' name="l">
+
+            <option value="1"> Work Life Balance is Bad </option>
+            <option value="2"> Work Life Balance is Good </option>
+            <option value="3"> Work Life Balance is Better </option>
+            <option value="4"> Work Life Balance is Best </option>            
         </select>
 
-        <select aria-label="Default select example" type="text" required='required' name="h">
+        <input type="text" placeholder="Years At Company" aria-label="default input example" required='required'
+            name="m"><br> <br>
 
-            <option value="1">Glucose is normal </option>
-            <option value="2"> Glucose above normal </option>
-            <option value="3">Glucose well above normal </option>
-        </select>
+        <input type="text" placeholder="Years With Current Manager" aria-label="default input example" required='required'
+            name="n">
+             
+        <select aria-label="Default select example" type="text" required='required' name="o">
 
-
-        <select aria-label="Default select example" type="text" required='required' name="j">
-
-            <option value="0">Do not smoke</option>
-            <option value="1">Do smoke</option>
-
-        </select>
-
-        <select aria-label="Default select example" type="text" required='required' name="i">
-
-            <option value="0">Non Alcoholic</option>
-            <option value="1">Alcoholic</option>
-
+            <option value="1"> Work always over time: Yes </option>
+            <option value="2"> Work always over time: No </option>
         </select>
 
         <br><br>
