@@ -34,9 +34,9 @@ def predict():
     
     def statement():
         if pred == 0:
-            return 'Result:- The model predicted that this employee is inclined to leave your company.'
+            return 'Result:- This employee would be very likely to leave your company.'
         elif pred == 1:
-            return 'Result:- This employee will not leave your company!'
+            return 'Result:- This employee would not leave your company.'
     
     return render_template('new.html',statement=statement())
 
