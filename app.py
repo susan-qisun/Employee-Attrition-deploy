@@ -3,6 +3,7 @@ import numpy as np
 import pickle
 
 model=pickle.load(open('Employee_attrition.pkl','rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 app = Flask(__name__)
 
@@ -28,13 +29,14 @@ def predict():
     data14=float(request.form['n'])
     data15=float(request.form['o'])  
     features=np.array([data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,data12,data13,data14,data15])
-    pred = model.predict([features])
+    test_scaled_set = scaler.transform([features])
+    pred = model.predict(test_scaled_set)
     
     def statement():
         if pred == 0:
-            return 'Result:- The model has predicted that your employee is not inclined to leave your company.'
+            return 'Result:- The model predicted that this employee is inclined to leave your company.'
         elif pred == 1:
-            return 'Result:- Your employee will leave your company!'
+            return 'Result:- This employee will not leave your company!'
     
     return render_template('new.html',statement=statement())
 
