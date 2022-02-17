@@ -3,7 +3,6 @@ import numpy as np
 import pickle
 
 model=pickle.load(open('Employee_attrition.pkl','rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 app = Flask(__name__)
 
@@ -29,8 +28,7 @@ def predict():
     data14=float(request.form['n'])
     data15=float(request.form['o'])  
     features=np.array([data1,data2,data3,data4,data5,data6,data7,data8,data9,data10,data11,data12,data13,data14,data15])
-    test_scaled_set = scaler.transform([features])
-    pred = model.predict(test_scaled_set)
+    pred = model.predict([features])
     
     def statement():
         if pred == 0:
