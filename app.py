@@ -23,7 +23,7 @@ def predict():
     data9=float(request.form['i'])
     data10=float(request.form['j'])
     data11=float(request.form['k'])
-    dat12=float(request.form['l'])
+    data12=float(request.form['l'])
     data13=float(request.form['m'])
     data14=float(request.form['n'])
     data15=float(request.form['o'])  
